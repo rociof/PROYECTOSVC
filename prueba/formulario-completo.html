@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="http://example.com/reposte" method="post"></form>
+    <p>
+        <label for="provincia">Provincia</label>
+        <select name="provincia" id="provincia">
+        <option value="15">A Coruña</option>
+        <option value="27">Pontevedra</option>
+        <option value="32">Lugo</option>
+        <option value="26">Orense</option>
+        </select>
+    </p>
+
+    <p>
+        MOTIVO DE LA VISITA <br>
+        <input type="radio" name="motivo" id="motivo1">
+        <label for="motivo1">Replanteo</label>
+        <input type="radio" name="motivo" id="motivo2">
+        <label for="motivo2">Verificación</label>
+
+    </p>
+    <p>
+        FECHA DE LA VISITA <br>
+       
+        <label for="FECHA">Fecha de la visita</label>
+        <input type="date" name="fecha" id="fecha">
+      
+    </p>
+
+    <p>
+        <label for="cc">Código de color:</label>
+        <input type="color" name="cc" id="cc">
+    </p>
+
+
+    <p>
+        <input type="submit" value="Enviar">
+        <button type="reset">Limpiar formulario</button>
+    </p>
+</body>
+</html>

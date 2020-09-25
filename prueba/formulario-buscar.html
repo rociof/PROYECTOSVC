@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <title>Formulario de búsqueda</title>
+	</head>
+	<body>
+    <!-- En action hay que poner un url de búsqueda, es la dirección a la que va 
+    el formulario -->
+    <!-- El method es el formato en el que se envían los parámetros
+    GET envía los datos usando la URL -->
+	    <form action="http://example.com/buscador" method="GET">
+	        <input type="text" name="consulta" placeholder="Escriba aquí los términos de búsqueda">
+	        <input type="submit" value="Buscar">
+        </form>
+        <!-- Nos dará como resultado: http://example.com/buscador?consulta=BUSQUEDA -->
+        
+
+        <img src="img/get.PNG" alt="EJEMPLO DE GET">
+	</body>
+	</html>
+</html>

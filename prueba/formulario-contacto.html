@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Formulario contacto</title>
+</head>
+<body>
+    <h3>FORMULARIO DE CONTACTO</h3>
+    <hr>
+
+    <!-- Los datos del POST no los vemos en la URL -->
+    <form action="https://example.com/contacto" method="POST">
+        <!-- Lo que se ponga en el "for" del label tiene que ser 
+            lo mismo que pongamos en el atributo id -->
+    <ul style="list-style: none"> 
+    <li>
+           <label for="nombre">Nombre</label>
+           <br>
+        <input type="name" name="nombre" id="nombre">
+         </li> 
+         <h3>Sexo</h3>
+         <li>
+            <input type="radio" id="masculino" name="genero" value="masculino">
+            <label for="masculino">Masculino</label><br>
+             <input type="radio" id="femenino" name="genero" value="femenino">
+                <label for="femenino">Femenino</label><br>
+             <input type="radio" id="otro" name="genero" value="otro">
+            <label for="otro">Otro</label>
+         </li><br>
+
+        <li>
+           <label for="email">Email</label><br>
+        <input type="email" name="email" id="email">
+         </li> 
+        <li>
+            <label for="asunto">Asunto</label>
+            <br>
+            <input type="asunto" name="asunto" id="asunto">
+        </li>
+        <li>
+            <label for="consulta">Mensaje</label>
+            <br>
+            <textarea name="consulta" id="consulta" rows="10">Escriba su mensaje</textarea>
+        </li>
+        <li>
+            <input type="checkbox" name= "privacidad" id="privacidad"></input>
+            <label for="checkbox">He leído y estoy de acuerdo con la política de privacidad</label>
+            
+        </li>
+        <br>
+
+        <input type="submit" value="Enviar">
+    </ul>
+    </form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        form {
+            /* Centra el formulario en la página */
+            margin: 0 auto;
+            width: 600px;
+            /* Borde de formulario */
+            padding: 1em;
+            border: 1px solid #CCC;
+            border-radius: 1em;}
+    </style>
+    <title>Matricula</title>
+</head>
+
+<body>
+
+    <form action="matricula.php" method="post">
+        <h1>MATRICULACIÓN</h1>
+        <h3>Introduzca los datos de matrícula del alumno, la materia y el año académico</h3>
+        <p>
+            <label for="nif">NIF:</label> <br>
+            <input type="text" id="nif" name="nif">
+        </p>
+        <p>
+            <label for="nombre">Nombre:</label> <br>
+            <input type="text" id="nombre" name="nombre">
+        </p>
+
+        <p>
+            <label for="apellidos">Apellidos:</label> <br>
+            <input type="text" id="apellidos" name="apellidos">
+        </p>
+        <p>
+            <label for="materia">Cod.Materia:</label> <br>
+            <input type="text" id="cod_materia" name="cod_materia">
+        </p>
+        <p>
+            <label for="year">Año:</label> <br>
+            <input type="number" id="ano" name="ano">
+        </p>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <button type="reset">Limpiar formulario</button>
+        </p>
+
+    </form>
+
+
+
+
+
+
+</body>
+
+</html>
